@@ -34,3 +34,9 @@ nosetests.xml
 .mr.developer.cfg
 .project
 .pydevproject
+
+# venv
+venv
+
+# node.js test
+tests/test_env/node_modules
