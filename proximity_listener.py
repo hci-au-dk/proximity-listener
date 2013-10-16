@@ -59,7 +59,7 @@ class ProximityListener(FileSystemEventHandler):
             try:
                 new_list.append({k.lstrip():v.lstrip() for k, v in d.iteritems()})
             except AttributeError:
-                console.log "odd data..."
+                print "odd data..."
         return new_list
             
     def filterAccessPoints(self, access_points):
