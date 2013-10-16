@@ -72,7 +72,7 @@ class ProximityListener(FileSystemEventHandler):
     def filterClients(self, clients, BSSIDs):
         new_list = []
         for client in clients:
-            if client['BSSID'] in BSSIDs or client['Probed ESSIDs'] == self.ssid:
+            if not client['Power'] == '-1' and (client['BSSID'] in BSSIDs or client['Probed ESSIDs'] == self.ssid):
                 new_list.append(client)
         return new_list
         

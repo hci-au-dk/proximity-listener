@@ -31,6 +31,10 @@ class ProximityListenerTest(unittest.TestCase):
         signalStrengths = self.proximityListener.getSignalStrengths()
         assert 'A0:0B:BA:C4:AD:EF' not in signalStrengths
         
+    def test_mac_on_with_power_minus_one_not_in_signal_strengths(self):
+        signalStrengths = self.proximityListener.getSignalStrengths()
+        assert '6C:D2:6B:9D:F4:55' not in signalStrengths
+        
     def test_mac_on_unknown_network_not_in_signal_strengths(self):
         signalStrengths = self.proximityListener.getSignalStrengths()
         assert 'E4:25:E7:01:28:F0' not in signalStrengths
@@ -54,4 +58,4 @@ class ProximityListenerTest(unittest.TestCase):
         bssids = map(lambda x: x['BSSID'], filtered_access_points)
         filtered_clients = self.proximityListener.filterClients(clients, bssids)
         print (len(filtered_clients))
-        assert len(filtered_clients) == 22
+        assert len(filtered_clients) == 21
