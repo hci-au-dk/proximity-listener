@@ -1,18 +1,31 @@
 import unittest
 from proximity_listener import ProximityListener
 
+class TestPoster(object):
+    """docstring for TestPoster"""
+    def __init__(self):
+        super(TestPoster, self).__init__()
+        
+    def handle_data(self, data):
+        print data
+
 class ProximityListenerTest(unittest.TestCase):
     
     def setUp(self):
-        self.proximityListener = ProximityListener('AU-Gadget', 'tests/test_data/test_data.csv')
+        self.proximityListener = ProximityListener('TestListener', 'AU-Gadget', 'tests/test_data/test_data.csv', TestPoster())
     
     def test_correct_mac_in_signal_strengths(self):
         signalStrengths = self.proximityListener.getSignalStrengths()
-        assert '74:E5:0B:40:E1:A2' in signalStrengths
+        assert '74:E5:0B:30:E1:A2' in signalStrengths
         
     def test_another_correct_mac_in_signal_strengths(self):
         signalStrengths = self.proximityListener.getSignalStrengths()
-        assert '58:1F:AA:31:C0:91' in signalStrengths
+        assert '58:1F:BA:31:C0:91' in signalStrengths
+        
+    def test_third_correct_mac_in_signal_strengths(self):
+        signalStrengths = self.proximityListener.getSignalStrengths()
+        print signalStrengths
+        assert 'C0:53:94:03:81:EF' in signalStrengths
             
     def test_mac_on_different_network_not_in_signal_strengths(self):
         signalStrengths = self.proximityListener.getSignalStrengths()
@@ -41,4 +54,4 @@ class ProximityListenerTest(unittest.TestCase):
         bssids = map(lambda x: x['BSSID'], filtered_access_points)
         filtered_clients = self.proximityListener.filterClients(clients, bssids)
         print (len(filtered_clients))
-        assert len(filtered_clients) == 13
+        assert len(filtered_clients) == 22

@@ -24,11 +24,11 @@ BSSID, First time seen, Last time seen, channel, Speed, Privacy, Cipher, Authent
 Station MAC, First time seen, Last time seen, Power, # packets, BSSID, Probed ESSIDs
 6C:D2:6B:9D:F4:55, 2013-10-14 08:18:03, 2013-10-14 08:30:21,  -1,       40, 8C:B6:4F:2A:72:62,
 E8:98:C4:9E:F9:EB, 2013-10-14 08:30:19, 2013-10-14 08:30:19, -80,        2, (not associated) ,
-60:A4:5C:92:31:81, 2013-10-14 08:17:34, 2013-10-14 08:29:39, -80,       62, (not associated) , OpalHotel,WirelessViennaAirport,tambohuskro,SAS WiPoint,CentrumKulturalneOjcowBarnabitow,Hotel,Mars
+60:A4:5C:92:31:81, 2013-10-14 08:17:34, 2013-10-14 08:29:39, -80,       62, (not associated) ,
 10:91:E9:0F:BE:0A, 2013-10-14 08:18:39, 2013-10-14 08:29:31, -66,        5, (not associated) , AUWLAN
 40:B0:FA:54:C5:13, 2013-10-14 08:19:41, 2013-10-14 08:29:11, -74,       12, (not associated) ,
 2C:B4:3A:DE:A7:37, 2013-10-14 08:19:05, 2013-10-14 08:28:50, -64,        4, (not associated) ,
-C0:53:94:03:81:EF, 2013-10-14 08:24:23, 2013-10-14 08:24:23, -82,        1, (not associated) , AU-Gadget
+C0:53:94:03:81:EF, 2013-10-14 08:24:23, 2013-10-14 08:24:23, -82,        1, (not associated) , AU-Gadget,AUWLAN
 88:31:8A:38:5C:6C, 2013-10-14 08:22:39, 2013-10-14 08:23:50, -80,      143, 8C:B6:4F:2A:72:62, AU-Gadget
 E4:25:E7:11:28:F0, 2013-10-14 08:23:01, 2013-10-14 08:23:01, -84,        2, (not associated) , AU-Gadget
 CC:08:E0:61:94:3F, 2013-10-14 08:19:15, 2013-10-14 08:21:20, -86,        8, (not associated) , AU-Gadget
